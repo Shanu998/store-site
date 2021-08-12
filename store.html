@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+
+        .parent {
+            border: #1A6CCC 10px solid;
+            color: rgb(255, 255, 255);
+            background-color: #1A6CCC;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+
+        .homeboy {
+            margin-left: auto;
+        }
+
+        .aboutway {
+            margin: 1px;
+        }
+
+        .worksway {
+            margin: 1px;
+        }
+
+        .nameway {
+            margin: 1px;
+        }
+
+        .box1 {
+            width: 15%;
+            height: 55vh;
+            float: left;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 100px;
+        }
+
+        .main-box {
+            width: 100%;
+        }
+
+        .box-top {
+            width: 65%;
+            height: 90vh;
+            float: left;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+            margin-right: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .box-latest {
+            width: 65%;
+            height: 53vh;
+            margin-left: 280px;
+            margin-top: 10px;
+            border-radius: 10px;
+            float: left;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+
+        }
+
+        .box-home {
+            padding: 10px;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 10px;
+            margin-top: 10px;
+            color: #568FD7;
+            background-color: #F3F7FC;
+            margin-bottom: 10px;
+
+        }
+
+        .active {
+            background-color: #F3F7FC;
+            color: #176BCC;
+        }
+
+        .top {
+            color: #0059C7;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            padding: 10px;
+            width: 70px;
+            height: 70px;
+            float: left;
+        }
+
+        .john {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            height: 100px;
+            width: 100%;
+        }
+
+        .img-john {
+            width: 25%;
+            float: left;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .normal-ux {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            float: left;
+        }
+
+        .normal {
+            height: 30px;
+            width: 100px;
+            background-color: #1A6CCC;
+            border-radius: 10px;
+            border: #1A6CCC 20px solid;
+            padding: 10px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        .ux {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            width: 50%;
+            margin-left: 10px;
+
+        }
+
+        .looking {
+            padding: 10px;
+            width: 75%;
+            border-radius: 20px;
+            outline: 10px;
+            border: 10px;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+
+        .button {
+            background-color: rgb(47, 47, 228);
+            width: 20%;
+            color: #ffffff;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-left: 15px;
+        }
+
+        .search-go {
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+
+        }
+
+        .secondset-ahmed {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            float: left;
+        }
+
+        .secondset {
+            height: 50px;
+            background-color: #1A6CCC;
+            border-radius: 10px;
+            border: #1A6CCC 20px solid;
+            padding: 10px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        .ahmed {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation>li>a {
+            text-decoration: none;
+        }
+
+        .nav-item-icon {
+            margin-right: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div><b>iShaded Store.</b></div>
+        <div class="homeboy">Home</div>
+        <div class="aboutway">About</div>
+        <div class="worksway">Works</div>
+        <div class="nameway">Shanu Abdullateef</div>
+    </div>
+    <div class="box1">
+        <form>
+            <div>
+                <ul class="navigation">
+                    <li>
+                        <a href=#"footer" class=box-home><span class="nav-item-icon fa fa-home"></span>Home</a>
+                    </li>
+                    <li>
+                        <a href=#"footer" class=box-home><span class="nav-item-icon fa fa-shopping-cart"></span>Cart</a>
+                    </li>
+                    <li>
+                        <a href=#"footer" class=box-home><span class="nav-item-icon fa fa-tags"></span>Coupons</a>
+                    </li>
+                    <li>
+                        <a href=#"footer" class=box-home><span class="nav-item-icon fa fa-star"></span>Favourite
+                            items</a>
+                    </li>
+                    <li>
+                        <a href=#"footer" class=box-home><span class="nav-item-icon fa fa-cog"></span>Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <div class="main-box">
+        <div class="box-top">
+            <div>
+                <h3 class="top">Top Sellers</h3>
+            </div>
+            <div class="img-john">
+                <img src="images/IMG_20190918_135856.jpg">
+                <div class="john">
+                    <h4>John Smith</h4>
+                    <h4>154 orders</h4>
+                </div>
+            </div>
+            <div class="img-john">
+                <img src="images/IMG_20190918_135856.jpg">
+                <div class="john">
+                    <h4>John Smith</h4>
+                    <h4>154 orders</h4>
+                </div>
+            </div>
+            <div class="img-john">
+                <img src="images/IMG_20190918_135856.jpg">
+                <div class="john">
+                    <h4>John Smith</h4>
+                    <h4>154 orders</h4>
+                </div>
+            </div>
+            <div class="img-john">
+                <img src="images/IMG_20190918_135856.jpg">
+                <div class="john">
+                    <h4>John Smith</h4>
+                    <h4>154 orders</h4>
+                </div>
+            </div>
+            <div class="img-john">
+                <img src="images/IMG_20190918_135856.jpg">
+                <div class="john">
+                    <h4>John Smith</h4>
+                    <h4>154 orders</h4>
+                </div>
+            </div>
+            <div class="img-john">
+                <img src="images/IMG_20190918_135959.jpg">
+                <div class="john">
+                    <h4>John Smith</h4>
+                    <h4>154 orders</h4>
+                </div>
+            </div>
+            <div class="img-john">
+                <img src="images/SAVE_20201123_245236.jpg">
+                <div class="john">
+                    <h4>John Smith</h4>
+                    <h4>154 orders</h4>
+                </div>
+            </div>
+            <div class="img-john">
+                <img src="images/FullSizeRender-2.jpg">
+                <div class="john">
+                    <h4>John Smith</h4>
+                    <h4>154 orders</h4>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3 class="top">Top Articles</h3>
+            </div>
+            <div class="normal-ux">
+                <div class="normal">
+                    <h5>you</h5>
+                </div>
+                <div class="ux">
+                    <h5>The Importance of UX</h5>
+                    <h5>Design in Business</h5>
+                    <h5>By John Smith</h5>
+                </div>
+            </div>
+            <div class="normal-ux">
+                <div class="normal">
+                    <h5>you</h5>
+                </div>
+                <div class="ux">
+                    <h5>The Importance of UX</h5>
+                    <h5>Design in Business</h5>
+                    <h5>By John Smith</h5>
+                </div>
+            </div>
+            <div class="normal-ux">
+                <div class="normal">
+                    <h5>you</h5>
+                </div>
+                <div class="ux">
+                    <h5>The Importance of UX</h5>
+                    <h5>Design in Business</h5>
+                    <h5>By John Smith</h5>
+                </div>
+            </div>
+            <div class="normal-ux">
+                <div class="normal">
+                    <h5>you</h5>
+                </div>
+                <div class="ux">
+                    <h5>The Importance of UX</h5>
+                    <h5>Design in Business</h5>
+                    <h5>By John Smith</h5>
+                </div>
+            </div>
+        </div>
+        <div class="box-latest">
+            <div>
+                <h3 class="top">Latest Bla Bla</h3>
+            </div>
+            <div class="search-go">
+                <input type="word" class="looking" placeholder="What are you looking for?">
+                <button type="Submit" class="button">Search</button>
+            </div>
+            <hr>
+            <div class="secondset-ahmed">
+                <div class="secondset">
+                    <h5>you</h5>
+                </div>
+                <div class="ahmed">
+                    <h5>How to design in a logo in</h5>
+                    <h5>5 steps</h5>
+                    <h5>By Ahmed Shadeed</h5>
+                </div>
+            </div>
+            <div class="secondset-ahmed">
+                <div class="secondset">
+                    <h5>you</h5>
+                </div>
+                <div class="ahmed">
+                    <h5>How to design in a logo in</h5>
+                    <h5>5 steps</h5>
+                    <h5>By Ahmed Shadeed</h5>
+                </div>
+            </div>
+            <div class="secondset-ahmed">
+                <div class="secondset">
+                    <h5>you</h5>
+                </div>
+                <div class="ahmed">
+                    <h5>How to design in a logo in</h5>
+                    <h5>5 steps</h5>
+                    <h5>By Ahmed Shadeed</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
