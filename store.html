@@ -18,6 +18,8 @@
         body {
             font-family: 'Poppins', sans-serif;
             font-size: 14px;
+            background-color: #EDF2F7;
+            border: 1px solid grey;
         }
 
         .parent {
@@ -31,18 +33,22 @@
 
         .homeboy {
             margin-left: auto;
+            margin-right: 10px;
         }
 
         .aboutway {
             margin: 1px;
+            margin-right: 10px;
         }
 
         .worksway {
             margin: 1px;
+            margin-right: 10px;
         }
 
         .nameway {
             margin: 1px;
+            margin-right: 10px;
         }
 
         .box1 {
@@ -86,11 +92,11 @@
 
         .box-home {
             padding: 10px;
-            width: 70%;
             display: flex;
             flex-direction: row;
             align-items: center;
-            border-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
             margin-top: 10px;
             color: #568FD7;
             background-color: #F3F7FC;
@@ -111,10 +117,10 @@
 
         img {
             border-radius: 50%;
-            padding: 10px;
+            padding: 5px;
             width: 70px;
             height: 70px;
-            float: left;
+            flex: none;
         }
 
         .john {
@@ -122,7 +128,6 @@
             justify-content: center;
             align-content: center;
             flex-direction: column;
-            height: 100px;
             width: 100%;
         }
 
@@ -206,6 +211,10 @@
             background-color: #1A6CCC;
             border-radius: 10px;
             border: #1A6CCC 20px solid;
+            border-top: 20px solid #1A6CCC;
+            border-right: 20px solid #1A6CCC;
+            border-bottom: 20px solid #1A6CCC;
+            border-left: 20px solid #1A6CCC;
             padding: 10px;
             float: left;
             margin-left: 20px;
@@ -228,7 +237,7 @@
         .navigation {
             list-style-type: none;
             margin: 0;
-            padding: 0;
+            padding: 0 10px 0 0;
         }
 
         .navigation>li>a {
@@ -237,6 +246,18 @@
 
         .nav-item-icon {
             margin-right: 5px;
+
+        }
+
+        .nav-item-icon-fire {
+            color: #E6AF32;
+        }
+
+        .header-image {
+            border-radius: 50%;
+            height: 5px;
+            width: 5px;
+            object-fit: cover;
 
         }
     </style>
@@ -249,6 +270,10 @@
         <div class="aboutway">About</div>
         <div class="worksway">Works</div>
         <div class="nameway">Shanu Abdullateef</div>
+        <div class="header-image">
+            <img src="images/IMG_20190918_135856.jpg">
+        </div>
+    </div>
     </div>
     <div class="box1">
         <form>
@@ -277,7 +302,7 @@
     <div class="main-box">
         <div class="box-top">
             <div>
-                <h3 class="top">Top Sellers</h3>
+                <h3 class="top"><span class="nav-item-icon-fire fa fa-fire"></span>Top Sellers</h3>
             </div>
             <div class="img-john">
                 <img src="images/IMG_20190918_135856.jpg">
@@ -337,11 +362,10 @@
             </div>
             <hr>
             <div>
-                <h3 class="top">Top Articles</h3>
+                <h3 class="top"><span class="nav-item-icon-fire fa fa-fire"></span>Top Articles</h3>
             </div>
             <div class="normal-ux">
                 <div class="normal">
-                    <h5>you</h5>
                 </div>
                 <div class="ux">
                     <h5>The Importance of UX</h5>
@@ -351,7 +375,6 @@
             </div>
             <div class="normal-ux">
                 <div class="normal">
-                    <h5>you</h5>
                 </div>
                 <div class="ux">
                     <h5>The Importance of UX</h5>
@@ -361,7 +384,6 @@
             </div>
             <div class="normal-ux">
                 <div class="normal">
-                    <h5>you</h5>
                 </div>
                 <div class="ux">
                     <h5>The Importance of UX</h5>
@@ -371,7 +393,6 @@
             </div>
             <div class="normal-ux">
                 <div class="normal">
-                    <h5>you</h5>
                 </div>
                 <div class="ux">
                     <h5>The Importance of UX</h5>
@@ -382,7 +403,7 @@
         </div>
         <div class="box-latest">
             <div>
-                <h3 class="top">Latest Bla Bla</h3>
+                <h3 class="top"><span class="nav-item-icon-fire fa fa-fire"></span>Latest Bla Bla</h3>
             </div>
             <div class="search-go">
                 <input type="word" class="looking" placeholder="What are you looking for?">
@@ -391,7 +412,6 @@
             <hr>
             <div class="secondset-ahmed">
                 <div class="secondset">
-                    <h5>you</h5>
                 </div>
                 <div class="ahmed">
                     <h5>How to design in a logo in</h5>
@@ -401,7 +421,6 @@
             </div>
             <div class="secondset-ahmed">
                 <div class="secondset">
-                    <h5>you</h5>
                 </div>
                 <div class="ahmed">
                     <h5>How to design in a logo in</h5>
@@ -411,7 +430,6 @@
             </div>
             <div class="secondset-ahmed">
                 <div class="secondset">
-                    <h5>you</h5>
                 </div>
                 <div class="ahmed">
                     <h5>How to design in a logo in</h5>
